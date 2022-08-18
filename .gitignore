@@ -1,0 +1,40 @@
+# editors
+.idea
+.vscode
+
+# git
+.github
+.env
+.git
+
+# configs
+# some _config.*
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# dependencies
+node_modules/
+# package-lock.json
+
+# misc folders
+dist/
+img/
+files/
+
+# reference / archives
+archives/
+**/*.psd
+**/*.fig
+**/*.rar
+reference/
+
+# server
+app/ht.access
+
+# thumbs
+._*
+**/ehthumbs.db
+**/Thumbs.db
