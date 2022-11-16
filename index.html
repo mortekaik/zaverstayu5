@@ -8,7 +8,7 @@
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> -->
 	<!-- <link rel="stylesheet" href="css/outline.css"> -->
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
-	<title>Марафон Заверстаю 5.0</title>
+	<title>Scandi (Марафон Заверстаю 5.0)</title>
 </head>
 
 <body>
@@ -18,29 +18,31 @@
 		<nav class="main-menu">
 
 			<a class="logo">
-				<img src="files/logo.svg" width="100" height="33" alt="Логотип магазина авторских букетов Ботаника">
+				<img src="files/logo.png" width="25" height="25" alt="Логотип агентства по дизайну интерьеров Сканди">Scandi
 			</a>
 
 			<ul class="menu-list">
 				<li class="menu-list__item">
-					<a href="#">Каталог</a>
+					<a href="#about">О компании</a>
 				</li>
 				<li class="menu-list__item">
-					<a href="#">Доставка и оплата</a>
+					<a href="#works">Портфолио</a>
 				</li>
 				<li class="menu-list__item">
-					<a href="#">Отзывы</a>
+					<a href="#team">Команда</a>
 				</li>
 				<li class="menu-list__item">
-					<a href="#">Спецпредложения</a>
+					<a href="#process">Как мы работаем</a>
 				</li>
 				<li class="menu-list__item">
-					<a href="#">Контакты</a>
+					<a href="#reviews">Отзывы клиентов</a>
 				</li>
 				<li class="menu-list__item">
-					<a href="#">Корзина</a>
+					<a href="#request">Оставить заявку</a>
 				</li>
 			</ul>
+
+			<a href="tel:+79818574624">+7 (981) 857-46-24</a>
 
 		</nav>
 
@@ -48,89 +50,169 @@
 
 	<main>
 
-		<section class="lead">
+		<section class="promo">
 
-			<h1>Авторские букеты <span>в Петербурге</span></h1>
-			<p>Оригинальные свежие букеты с доставкой по всему городу</p>
+			<h1 class="visually-hidden">Агентство по дизайну интерьеров Сканди</h1>
+			<p>Поможем сделать вашу квартиру уютнее</p>
+			<p>Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
 
-			<a class="button" href="catalog.html">Смотреть каталог</a>
-
-			<img src="files/lead-bouquet_1.jpg" width="386" height="404" alt="Букет розовых тюльпанов">
-			<img src="files/lead-bouquet_2.jpg" width="387" height="420" alt="Букет розовых и белых роз">
+			<a class="button" href="#request">Оставить заявку</a>
 
 		</section>
 
-		<section class="features">
+		<section class="about" id="#about">
 
-			<h2 class="visually-hidden">Преимущества онлайн-магазина «Botanika»</h2>
+			<h2 class="h2 title about__title">О нас</h2>
+
+			<img src="files/about.jpg" width="445" height="465" alt="Пример декора обеденного стола вазой с сухоцветами">
+
+			<p class="about__info">
+				Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.
+			</p>
+			<p class="about__info">
+				Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: «Да! Это именно то, что действительно достойно моего дома!»
+			</p>
+
+		</section>
+
+		<section class="achievements">
+
+			<h2 class="visually-hidden">Наши достижения</h2>
 
 			<dl>
-				<dt>Быстрая доставка</dt>
-				<dd>Можем собрать букет и передать его в доставку всего за час.</dd>
-				<dt>Всегда свежие цветы</dt>
-				<dd>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</dd>
-				<dt>Отправляем фото цветов</dt>
-				<dd>Перед доставкой сделаем фотографию букета и отправим вам.</dd>
+				<dt>5</dt>
+				<dd>лет опыта</dd>
+				<dt>100</dt>
+				<dd>проектов</dd>
+				<dt>10</dt>
+				<dd>наград</dd>
 			</dl>
 
 		</section>
 
-		<section class="bestsellers">
+		<section class="works" id="#works">
 
-			<h2>Популярные букеты</h2>
+			<h2 class="h2 title works__title">Наши работы</h2>
 
-			<article class="bestseller">
-				 <h3 class="bestseller__title">Букет «Нежность»</h3>
-				 <p class="bestseller__text">Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
-				 <p class="bestseller__size">30 × 40 см</p>
-				 <p class="bestseller__price">3600 руб.</p>
+			<div class="works__grid">
 
-				 <a class="button button--order" href="#">Заказать</a>
+				<article class="works__item work">
 
-				 <img class="bestseller__image" src="files/garden-roses_1.png" width="387" height="438"	alt="Букет желто-розовых и белых садовых роз">
+					<img class="work__image" src="files/portfolio-1.jpg" width="488" height="451"	alt="Интерьер с двухспальной кроватью и ширмой">
 
-			</article>
+					<div class="work__hover">
+						<h3 class="work__title">Квартира-студия 30 кв.м.</h3>
+						<p class="work__text">
+							В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.
+						</p>
+					</div>
 
-			<button class="arrow arrow--left" type="button">
-				<span class="visually-hidden">Кнопка переключения слайдов назад</span>
-			</button>
-			<button class="arrow arrow--right" type="button">
-				<span class="visually-hidden">Кнопка переключения слайдов вперёд</span>
-			</button>
+				</article>
+
+				<article class="works__item work">
+
+					<img class="work__image" src="files/portfolio-2.jpg" width="692" height="451"	alt="Интерьер кухни с белой барной стойкой у которой стоят четыре деревянных табурета">
+
+					<div class="work__hover">
+						<h3 class="work__title">Квартира-студия 30 кв.м.</h3>
+						<p class="work__text">
+							В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.
+						</p>
+					</div>
+
+				</article>
+
+				<article class="works__item work">
+
+					<img class="work__image" src="files/portfolio-3.jpg" width="692" height="451"	alt="Интерьер гостиной с светло-зелёным диваном и белым кофейным столиком">
+
+					<div class="work__hover">
+						<h3 class="work__title">Квартира-студия 30 кв.м.</h3>
+						<p class="work__text">
+							В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.
+						</p>
+					</div>
+
+				</article>
+
+				<article class="works__item work">
+
+					<img class="work__image" src="files/portfolio-4.jpg" width="488" height="451"	alt="Интерьер ванной комнаты со стерыми стенами, пальмой и большой белой ванной в центре">
+
+					<div class="work__hover">
+						<h3 class="work__title">Квартира-студия 30 кв.м.</h3>
+						<p class="work__text">
+							В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.
+						</p>
+					</div>
+
+				</article>
+
+			</div>
+
+			<a class="button more" href="#">Смотреть ещё
+				<svg width="61" height="16" viewBox="0 0 61 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M60.7071 8.70711C61.0976 8.31658 61.0976 7.68342 60.7071 7.29289L54.3432 0.928932C53.9526 0.538408 53.3195 0.538408 52.9289 0.928932C52.5384 1.31946 52.5384 1.95262 52.9289 2.34315L58.5858 8L52.9289 13.6569C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.70711ZM0 9H60V7H0V9Z" fill="#533738" />
+				</svg>
+			</a>
 
 		</section>
 
-		<section class="categories">
+		<section class="team" id="#team">
 
-			<h2>Избранные разделы каталога</h2>
+			<h2 class="h2 title team__title">Команда</h2>
 
-			<ul class="categories-list">
+			<ul class="team-list">
 
-				<li class="categorie categories-list__item">
-					<a class="categorie__link" href="catalog.html">
-						<h3 class="categorie__title">Свадебные букеты</h3>
-						<p class="categorie__text">Букеты для невест</p>
-						<img src="files/wedding-bouquet.jpg" width="387" height="442" alt="Свадебный букет из роз в вазе на столе">
-					</a>
+				<li class="teammate team-list__item">
+					<img class="teammate__image" src="files/team-1.jpg" width="320" height="248" alt="Главный дизайнер Маша">
+					<p class="teammate__text">
+						Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.
+					</p>
 				</li>
-
-				<li class="categorie categories-list__item">
-					<a class="categorie__link" href="catalog.html">
-						<h3 class="categorie__title">Букеты с пионами</h3>
-						<p class="categorie__text">Букеты с сезонными пионами</p>
-						<img src="files/peony-flowers-vase.jpg" width="387" height="442" alt="Букет розовых пионов в вазе">
-					</a>
+				<li class="teammate team-list__item">
+					<img class="teammate__image" src="files/team-2.jpg" width="320" height="250" alt="Менеджер Саша">
+					<p class="teammate__text">
+						С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы и ответит на все вопросы.
+					</p>
 				</li>
-
-				<li class="categorie categories-list__item">
-					<a class="categorie__link" href="catalog.html">
-						<h3 class="categorie__title">Выбрать букет</h3>
-						<p class="categorie__text">Букеты в ассортименте</p>
-						<img src="files/mixed-bouquet.jpg" width="387" height="442" alt="Девушка закрывает лицо ярким букетом из разных цветов">
-					</a>
+				<li class="teammate team-list__item">
+					<img class="teammate__image" src="files/team-3.jpg" width="320" height="253" alt="Дизайнер Катя">
+					<p class="teammate__text">
+						Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как обустроить дом так, чтобы вам понравилось.
+					</p>
 				</li>
 
 			</ul>
+
+			<div id="process">
+
+				<h2 class="h2 title process__title">Как мы работаем</h2>
+
+				<ol class="process__list">
+					<li class="process__item">
+						<span>1</span>
+						<p>Знакомимся, выезжаем
+							на объект, утверждаем концепцию, подписываем договор.</p>
+					</li>
+					<li class="process__item">
+						<span>2</span>
+						<p>Подбираем мебель, текстиль, аксессуары. Делаем 3D-
+							визуализацию.</p>
+					</li>
+					<li class="process__item">
+						<span>3</span>
+						<p>Находим нужные магазины, помогаем с доставкой
+							и оплатой товаров.</p>
+					</li>
+					<li class="process__item">
+						<span>4</span>
+						<p>Воплощаем проект в жизнь:
+							расставляем мебель и цветы, вешаем шторы, находим места для мелочей.</p>
+					</li>
+				</ol>
+
+			</div>
 
 		</section>
 
