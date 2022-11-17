@@ -18,7 +18,7 @@
 		<nav class="main-menu">
 
 			<a class="logo">
-				<img src="files/logo.png" width="25" height="25" alt="Логотип агентства по дизайну интерьеров Сканди">Scandi
+				<img src="files/logo.png" width="25" height="25" alt="Логотип агентства Сканди - графическое изображение торшера">Scandi
 			</a>
 
 			<ul class="menu-list">
@@ -42,7 +42,7 @@
 				</li>
 			</ul>
 
-			<a href="tel:+79818574624">+7 (981) 857-46-24</a>
+			<a class="company-phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
 
 		</nav>
 
@@ -56,7 +56,7 @@
 			<p>Поможем сделать вашу квартиру уютнее</p>
 			<p>Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
 
-			<a class="button" href="#request">Оставить заявку</a>
+			<a class="button button__request" href="#request">Оставить заявку</a>
 
 		</section>
 
@@ -250,78 +250,31 @@
 
 		</section>
 
-		<section class="order">
+		<section class="request" id="request">
 
-			<h2>4 шага к идеальному букету</h2>
+			<div class="request-wrap">
 
-			<ul class="order-list">
-				<li class="order-list__item">
-					<h3>Заказ</h3>
-					<p>Выберите понравившийся букет из каталога и оформите заказ</p>
-				</li>
-				<li class="order-list__item">
-					<h3>Уточнение деталей</h3>
-					<p>Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
-				</li>
-				<li class="order-list__item">
-					<h3>Оплата</h3>
-					<p>Оплатить заказ можно онлайн на сайте или при получении</p>
-				</li>
-				<li class="order-list__item">
-					<h3>Доставка</h3>
-					<p>Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
-				</li>
-			</ul>
-		</section>
+				<h2 class="h2 title request__title">Оставить заявку</h2>
+				<p class="request__text">
+					Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.
+				</p>
+				<form class="request__form form" action="https://echo.htmlacademy.ru" method="post">
+					<p class="form__username">
+						<input class="input-text" type="text" name="username" id="form-username" required>
+						<label class="input-label" for="form-username">Ваше имя</label>
+					</p>
+					<p class="form__phone">
+						<input class="input-text" type="tel" name="phone" id="form-phone" required>
+						<label class="input-label" for="form-phone">Введите телефон</label>
+					</p>
+					<button type="submit" class="button button__request">
+						Оставить заявку
+					</button>
+				</form>
 
-		<section class="news">
+			</div>
 
-			<h2>Следите за нашими новостями</h2>
-
-			<p>Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
-
-			<ul class="social-list">
-				<li class="social-list__item">
-					<a href="#">Инстаграм</a>
-				</li>
-				<li class="social-list__item">
-					<a href="#">Фейсбук</a>
-				</li>
-				<li class="social-list__item">
-					<a href="#">Твиттер</a>
-				</li>
-			</ul>
-
-			<img src="files/bouquet_of_roses_1.jpg" width="285" height="220" alt="Букет из нескольких роз разного цвета">
-			<img src="files/bouquet_of_roses_2.jpg" width="285" height="220" alt="Букет из нескольких розовых роз">
-			<img src="files/bouquet_of_roses_3.jpg" width="387" height="460" alt="Рука с букетом роз в бумажной упаковке">
-
-		</section>
-
-		<section class="reviews">
-
-			<h2>Отзывы</h2>
-
-			<ul class="reviews-list">
-				<li class="reviews-list__item">
-					<blockquote>
-						<p>Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое спасибо!</p>
-						<cite>Марина</cite>
-					</blockquote>
-				</li>
-				<li class="reviews-list__item">
-					<blockquote>
-						<p>Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился, буду ещё заказывать!</p>
-						<cite>Татьяна</cite>
-					</blockquote>
-				</li>
-				<li class="reviews-list__item">
-					<blockquote>
-						<p>Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно соберут красивый букет!</p>
-						<cite>Ольга</cite>
-					</blockquote>
-				</li>
-			</ul>
+			<img class="map-image" src="files/map.jpg" width="590" height="624" alt="Карта проезда к Большой Конюшенной 19">
 
 		</section>
 
@@ -329,54 +282,11 @@
 
 	<footer class="main-footer">
 
-		<section class="contacts">
+		<a class="company-phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
 
-			<h2>Мы ждем вас</h2>
+		<p class="company-address">Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
 
-			<dl class="contacts-list">
-				<dt>Приходите к нам:</dt>
-				<dd>Санкт-Петербург, ул. Большая Конюшенная, д. 19</dd>
-				<dt>Режим работы</dt>
-				<dd>Пн-Вск, с 9-00 до 20-00</dd>
-				<dt>Позвоните нам:</dt>
-				<dd><a href="tel:+78129834719">+ 7 (812) 983-47-19</a></dd>
-				<dt>Напишите нам:</dt>
-				<dd><a href="mailto:info@botanika.ru">info@botanika.ru</a></dd>
-			</dl>
-
-			<img src="files/map.jpg" width="1440" height="645" alt="Карта">
-
-		</section>
-
-		<section class="footer-nav">
-
-			<h2 class="visually-hidden">Дополнительная навигация по сайту</h2>
-
-			<a class="footer-logo">
-				<img src="files/logo_footer.svg" width="100" height="33" alt="Логотип магазина авторских букетов Ботаника">
-			</a>
-
-			<ul class="footer-site-navigation">
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Доставка и оплата</a></li>
-				<li><a href="#">Отзывы</a></li>
-				<li><a href="#">Спецпредложения</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-
-			<ul class="social-list">
-				<li class="social-list__item">
-					<a href="#">Инстаграм</a>
-				</li>
-				<li class="social-list__item">
-					<a href="#">Фейсбук</a>
-				</li>
-				<li class="social-list__item">
-					<a href="#">Твиттер</a>
-				</li>
-			</ul>
-
-		</section>
+		<p class="copyright">ИП Королёва А.А.</p>
 
 	</footer>
 
