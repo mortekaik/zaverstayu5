@@ -16,6 +16,123 @@
 	font-display: swap;
 }
 
-body {
-	font-family: 'Montserrat', 'Arial', sans-serif;
+*, *::before, *::after {
+	box-sizing: inherit;
 }
+html {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	min-width: 320px;
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #533738;
+	background-color: #efe6e4;
+}
+
+a {
+	text-decoration: none;
+	color: #533738;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* спец.класс для скрытия элементов с сохранением доступности */
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0, 0, 0, 0);
+}
+
+.button {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+.h2 {
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+
+/**** HEADER ****/
+
+.logo {
+	text-transform: uppercase;
+}
+
+.main-header {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.25;
+	background-color: #efe6e4;
+}
+
+/**** HEADER OFF ****/
+
+
+/**** PROMO ****/
+
+.promo__title {
+	font-size: 50px;
+	line-height: 62px;
+}
+
+/**** PROMO OFF ****/
+
+
+/**** ABOUT ****/
+/**** ABOUT OFF ****/
+
+
+/**** ACHIEVEMENTS ****/
+
+.achievements {
+	background-color: #8d7370;
+}
+
+.achievements-list {
+	color: #ffffff;
+}
+.achievements__term {
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 62px;
+}
+.achievements__desc {
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 36.5px;
+	text-transform: uppercase;
+}
+
+/**** ACHIEVEMENTS OFF ****/
