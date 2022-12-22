@@ -84,6 +84,10 @@ input[type='radio'].visually-hidden {
 	text-transform: uppercase;
 }
 
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
 
 /**** HEADER ****/
@@ -93,7 +97,6 @@ input[type='radio'].visually-hidden {
 	font-weight: 400;
 	line-height: 1.25;
 	background-color: #efe6e4;
-	padding-top: 36px;
 	outline: 1px solid blue;
 	background-image: url('../files/promo.jpg');
 	background-repeat: no-repeat;
@@ -101,12 +104,10 @@ input[type='radio'].visually-hidden {
 }
 
 .main-menu {
-	max-width: 1200px;
-	margin: 0 auto;
-	/* padding-bottom: 90px; */
+	padding-top: 36px;
+	padding-bottom: 45px;
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: space-between; */
 	align-items: center;
 }
 
@@ -133,22 +134,34 @@ input[type='radio'].visually-hidden {
 	margin-left: auto;
 }
 
-/**** HEADER OFF ****/
-
-
-/**** PROMO ****/
+/** PROMO **/
 
 .promo {
-
+	padding-top: 46px;
+	padding-left: 86px;
+	padding-bottom: 168px;
+	outline: 1px solid green;
 }
 
 .promo__title {
+	width: 535px;
+	margin: 0;
+	margin-bottom: 24px;
 	font-size: 50px;
 	line-height: 62px;
-	margin: 0;
 }
 
-/**** PROMO OFF ****/
+.promo__text {
+	width: 495px;
+	margin: 0;
+	margin-bottom: 21px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+/** PROMO OFF **/
+
+/**** HEADER OFF ****/
 
 
 /**** ABOUT ****/
@@ -253,7 +266,8 @@ input[type='radio'].visually-hidden {
 }
 
 .button__request {
-	padding: 0;
+	display: inline-block;
+	padding: 25px 67px;
 	border: none;
 	background-color: #cc8b86;
 }
