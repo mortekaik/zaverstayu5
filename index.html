@@ -13,13 +13,14 @@
 
 	<header class="main-header">
 
-		<div class="container">
-			<nav class="main-menu">
+		<div class="wide-container">
 
-				<a class="logo">
-					<img src="files/logo.png" width="25" height="25"
-						alt="Логотип агентства Сканди - графическое изображение торшера">Scandi
-				</a>
+			<a class="logo">
+				<img src="files/logo.png" width="25" height="25"
+					alt="Логотип агентства Сканди - графическое изображение торшера">Scandi
+			</a>
+
+			<nav class="main-menu">
 
 				<ul class="menu-list">
 					<li class="menu-list__item">
@@ -42,133 +43,156 @@
 					</li>
 				</ul>
 
-				<a class="company-phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
-
 			</nav>
 
-			<section class="promo">
+			<a class="company-phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
 
-				<h1 class="visually-hidden">Агентство по дизайну интерьеров Сканди</h1>
-				<p class="promo__title">Поможем сделать вашу квартиру уютнее</p>
-				<p class="promo__text">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
-
-				<a class="button button__request" href="#request">Оставить заявку</a>
-
-			</section>
 		</div>
 
 	</header>
 
 	<main>
 
+		<section class="promo">
+
+			<div class="container">
+				<h1 class="visually-hidden">Агентство по дизайну интерьеров Сканди</h1>
+				<p class="promo__title">Поможем сделать вашу квартиру уютнее</p>
+				<p class="promo__text">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
+
+				<a class="button button__request" href="#request">Оставить заявку</a>
+			</div>
+
+		</section>
+
 		<section class="about" id="about">
 
-			<h2 class="h2 title about__title">О нас</h2>
+			<div class="container">
 
-			<img src="files/about.jpg" width="445" height="465" alt="Пример декора обеденного стола вазой с сухоцветами">
+				<h2 class="h2 title about__title">О нас</h2>
 
-			<p class="about__info">
-				Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые
-				интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то, что по-настоящему вдохновляет
-				дизайнеров нашей студии.
-			</p>
-			<p class="about__info">
-				Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать: «Да! Это именно то, что
-				действительно достойно моего дома!»
-			</p>
+				<div class="about__columns">
+
+					<img class="about__img" src="files/about.jpg" width="445" height="465" alt="Пример декора обеденного стола вазой с сухоцветами">
+
+					<div class="about__info">
+						<p class="about__text">
+							Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые
+							интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то, что по-настоящему вдохновляет
+							дизайнеров нашей студии.
+						</p>
+						<p class="about__text">
+							Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать: «Да! Это именно то, что
+							действительно достойно моего дома!»
+						</p>
+					</div>
+
+				</div>
+
+			</div>
 
 		</section>
 
 		<section class="achievements">
 
-			<h2 class="visually-hidden">Наши достижения</h2>
+			<div class="container">
 
-			<dl class="achievements-list">
-				<dt class="achievements__term">5</dt>
-				<dd class="achievements__desc">лет опыта</dd>
-				<dt class="achievements__term">100</dt>
-				<dd class="achievements__desc">проектов</dd>
-				<dt class="achievements__term">10</dt>
-				<dd class="achievements__desc">наград</dd>
-			</dl>
+				<h2 class="visually-hidden">Наши достижения</h2>
+
+				<ul class="achievements-list">
+					<li class="achievements__item">
+						<p><span>5</span> лет опыта</p>
+					</li>
+					<li class="achievements__item">
+						<p><span>100</span> проектов</p>
+					</li>
+					<li class="achievements__item">
+						<p><span>10</span> наград</p>
+					</li>
+				</ul>
+
+			</div>
 
 		</section>
 
 		<section class="works" id="works">
 
-			<h2 class="h2 title works__title">Наши работы</h2>
+			<div class="wide-container">
 
-			<div class="works__grid">
+				<h2 class="h2 title works__title">Наши работы</h2>
 
-				<article class="works__item work">
+				<div class="works__grid">
 
-					<img class="work__image" src="files/portfolio-1.jpg" width="488" height="451"
-						alt="Интерьер с двухспальной кроватью и ширмой">
+					<article class="works__item work">
 
-					<div class="work__hover">
-						<h3 class="work__title">Квартира-студия 30 кв.м.</h3>
-						<p class="work__text">
-							В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
-							ребятам уютный интерьер, отсылающий к виллам островов Бали.
-						</p>
-					</div>
+						<img class="work__image" src="files/portfolio-1.jpg" width="488" height="451"
+							alt="Интерьер с двухспальной кроватью и ширмой">
 
-				</article>
+						<div class="work__hover">
+							<h3 class="work__title">Квартира-студия 30 кв.м.</h3>
+							<p class="work__text">
+								В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+								ребятам уютный интерьер, отсылающий к виллам островов Бали.
+							</p>
+						</div>
 
-				<article class="works__item work">
+					</article>
 
-					<img class="work__image" src="files/portfolio-2.jpg" width="692" height="451"
-						alt="Интерьер кухни с белой барной стойкой у которой стоят четыре деревянных табурета">
+					<article class="works__item work">
 
-					<div class="work__hover">
-						<h3 class="work__title">Квартира-студия 30 кв.м.</h3>
-						<p class="work__text">
-							В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
-							ребятам уютный интерьер, отсылающий к виллам островов Бали.
-						</p>
-					</div>
+						<img class="work__image" src="files/portfolio-2.jpg" width="692" height="451"
+							alt="Интерьер кухни с белой барной стойкой у которой стоят четыре деревянных табурета">
 
-				</article>
+						<div class="work__hover">
+							<h3 class="work__title">Квартира-студия 30 кв.м.</h3>
+							<p class="work__text">
+								В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+								ребятам уютный интерьер, отсылающий к виллам островов Бали.
+							</p>
+						</div>
 
-				<article class="works__item work">
+					</article>
 
-					<img class="work__image" src="files/portfolio-3.jpg" width="692" height="451"
-						alt="Интерьер гостиной с светло-зелёным диваном и белым кофейным столиком">
+					<article class="works__item work">
 
-					<div class="work__hover">
-						<h3 class="work__title">Квартира-студия 30 кв.м.</h3>
-						<p class="work__text">
-							В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
-							ребятам уютный интерьер, отсылающий к виллам островов Бали.
-						</p>
-					</div>
+						<img class="work__image" src="files/portfolio-3.jpg" width="692" height="451"
+							alt="Интерьер гостиной с светло-зелёным диваном и белым кофейным столиком">
 
-				</article>
+						<div class="work__hover">
+							<h3 class="work__title">Квартира-студия 30 кв.м.</h3>
+							<p class="work__text">
+								В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+								ребятам уютный интерьер, отсылающий к виллам островов Бали.
+							</p>
+						</div>
 
-				<article class="works__item work">
+					</article>
 
-					<img class="work__image" src="files/portfolio-4.jpg" width="488" height="451"
-						alt="Интерьер ванной комнаты со стерыми стенами, пальмой и большой белой ванной в центре">
+					<article class="works__item work">
 
-					<div class="work__hover">
-						<h3 class="work__title">Квартира-студия 30 кв.м.</h3>
-						<p class="work__text">
-							В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
-							ребятам уютный интерьер, отсылающий к виллам островов Бали.
-						</p>
-					</div>
+						<img class="work__image" src="files/portfolio-4.jpg" width="488" height="451"
+							alt="Интерьер ванной комнаты со стерыми стенами, пальмой и большой белой ванной в центре">
 
-				</article>
+						<div class="work__hover">
+							<h3 class="work__title">Квартира-студия 30 кв.м.</h3>
+							<p class="work__text">
+								В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали
+								ребятам уютный интерьер, отсылающий к виллам островов Бали.
+							</p>
+						</div>
+
+					</article>
+
+				</div>
+
+				<a class="button more" href="#">Смотреть ещё<svg width="60" height="16" viewBox="0 0 60 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M60.7071 8.70711C61.0976 8.31658 61.0976 7.68342 60.7071 7.29289L54.3432 0.928932C53.9526 0.538408 53.3195 0.538408 52.9289 0.928932C52.5384 1.31946 52.5384 1.95262 52.9289 2.34315L58.5858 8L52.9289 13.6569C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.70711ZM0 9H60V7H0V9Z"
+							fill="#533738" />
+					</svg>
+				</a>
 
 			</div>
-
-			<a class="button more" href="#">Смотреть ещё
-				<svg width="61" height="16" viewBox="0 0 61 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="M60.7071 8.70711C61.0976 8.31658 61.0976 7.68342 60.7071 7.29289L54.3432 0.928932C53.9526 0.538408 53.3195 0.538408 52.9289 0.928932C52.5384 1.31946 52.5384 1.95262 52.9289 2.34315L58.5858 8L52.9289 13.6569C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.70711ZM0 9H60V7H0V9Z"
-						fill="#533738" />
-				</svg>
-			</a>
 
 		</section>
 
