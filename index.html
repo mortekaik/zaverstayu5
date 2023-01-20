@@ -198,35 +198,40 @@
 
 		<section class="team" id="team">
 
-			<h2 class="h2 title team__title">Команда</h2>
+			<div class="container">
 
-			<ul class="team-list">
+				<h2 class="h2 title team__title">Команда</h2>
 
-				<li class="teammate team-list__item">
-					<img class="teammate__image" src="files/team-1.jpg" width="320" height="248" alt="Главный дизайнер Маша">
-					<p class="teammate__text">
-						Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает
-						сделать вашу квартиру красивой и уютной.
-					</p>
-				</li>
-				<li class="teammate team-list__item">
-					<img class="teammate__image" src="files/team-2.jpg" width="320" height="250" alt="Менеджер Саша">
-					<p class="teammate__text">
-						С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
-						и ответит на все вопросы.
-					</p>
-				</li>
-				<li class="teammate team-list__item">
-					<img class="teammate__image" src="files/team-3.jpg" width="320" height="253" alt="Дизайнер Катя">
-					<p class="teammate__text">
-						Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как обустроить дом
-						так, чтобы вам понравилось.
-					</p>
-				</li>
+				<ul class="team-list">
 
-			</ul>
+					<li class="teammate team-list__item">
+						<img class="teammate__image" src="files/team-1.jpg" width="320" height="248" alt="Главный дизайнер Маша">
+						<p class="teammate__text">
+							Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает
+							сделать вашу квартиру красивой и уютной.
+						</p>
+					</li>
+					<li class="teammate team-list__item">
+						<img class="teammate__image" src="files/team-2.jpg" width="320" height="250" alt="Менеджер Саша">
+						<p class="teammate__text">
+							С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
+							и ответит на все вопросы.
+						</p>
+					</li>
+					<li class="teammate team-list__item">
+						<img class="teammate__image" src="files/team-3.jpg" width="320" height="253" alt="Дизайнер Катя">
+						<p class="teammate__text">
+							Катя тоже занимается дизайном. Она всегда находит общий язык
+							с клиентами и точно знает, как обустроить дом
+							так, чтобы вам понравилось.
+						</p>
+					</li>
 
-			<div id="process">
+				</ul>
+
+			</div>
+
+			<div class="wide-container" id="process">
 
 				<h2 class="h2 title process__title">Как мы работаем</h2>
 
@@ -259,44 +264,48 @@
 
 		<section class="reviews" id="reviews">
 
-			<h2 class="h2 title reviews__title">Отзывы</h2>
+			<div class="container">
 
-			<div class="reviews__slider">
-				<article class="review reviews__slide">
-					<blockquote class="review__text">
-						<p>
-							«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
-						</p>
-						<p>
-							Работа шла быстро, было очень приятно общаться и взаимодействовать с сотрудниками. Не ожидала, что это
-							будет так легко!
-						</p>
-						<p>Буду советовать и своим друзьям к вам обращаться!»</p>
-						<cite>Анна Беловская</cite>
-					</blockquote>
-					<div class="review__images">
-						<img class="review__image" src="files/review-1.jpg" width="407" height="272"
-							alt="Светлый интерьер гостиной с деревянной мебелью и черным диваном">
-						<img class="review__image" src="files/review-2.jpg" width="407" height="272"
-							alt="Интерьер кухни с деревянными фасадами, на переднем плане белая барная стойка с пятью коричневыми высокими стульями">
-					</div>
-				</article>
-			</div>
+				<h2 class="h2 title reviews__title">Отзывы</h2>
 
-			<div class="reviews__paging">
-				<button class="arrow arrow--left" type="button">
-					<svg width="33" height="16" viewBox="0 0 33 16"
-					fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z" fill="#F5F2ED"/>
-					</svg>
-					<span class="visually-hidden">Кнопка переключения слайдов назад</span>
-				</button>
-				<button class="arrow arrow--right" type="button">
-					<svg fill="none" height="16" viewBox="0 0 33 16" width="33" xmlns="http://www.w3.org/2000/svg">
-						<path d="m32.7071 8.70711c.3905-.39053.3905-1.02369 0-1.41422l-6.364-6.363958c-.3905-.390524-1.0236-.390524-1.4142 0-.3905.390528-.3905 1.023688 0 1.414218l5.6569 5.65685-5.6569 5.6569c-.3905.3905-.3905 1.0236 0 1.4142.3906.3905 1.0237.3905 1.4142 0zm-32.7071.29289h32v-2h-32z" fill="#f5f2ed"/>
-					</svg>
-					<span class="visually-hidden">Кнопка переключения слайдов вперёд</span>
-				</button>
+				<div class="reviews__slider">
+
+					<article class="review reviews__slide">
+						<blockquote class="review__text">
+							<p>
+								«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
+							</p>
+							<p>
+								Работа шла быстро, было очень приятно общаться и взаимодействовать с сотрудниками. Не ожидала, что это
+								будет так легко!
+							</p>
+							<p>Буду советовать и своим друзьям к вам обращаться!»</p>
+							<cite>Анна Беловская</cite>
+						</blockquote>
+						<div class="review__images">
+							<img class="review__image" src="files/review-1.jpg" width="407" height="272"
+								alt="Светлый интерьер гостиной с деревянной мебелью и черным диваном">
+							<img class="review__image" src="files/review-2.jpg" width="407" height="272"
+								alt="Интерьер кухни с деревянными фасадами, на переднем плане белая барная стойка с пятью коричневыми высокими стульями">
+						</div>
+					</article>
+
+					<button class="reviews__button reviews__button--left" type="button">
+						<svg width="33" height="16" viewBox="0 0 33 16"
+						fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z" fill="#F5F2ED"/>
+						</svg>
+						<span class="visually-hidden">Кнопка переключения слайдов назад</span>
+					</button>
+					<button class="reviews__button reviews__button--right" type="button">
+						<svg fill="none" height="16" viewBox="0 0 33 16" width="33" xmlns="http://www.w3.org/2000/svg">
+							<path d="m32.7071 8.70711c.3905-.39053.3905-1.02369 0-1.41422l-6.364-6.363958c-.3905-.390524-1.0236-.390524-1.4142 0-.3905.390528-.3905 1.023688 0 1.414218l5.6569 5.65685-5.6569 5.6569c-.3905.3905-.3905 1.0236 0 1.4142.3906.3905 1.0237.3905 1.4142 0zm-32.7071.29289h32v-2h-32z" fill="#f5f2ed"/>
+						</svg>
+						<span class="visually-hidden">Кнопка переключения слайдов вперёд</span>
+					</button>
+
+				</div>
+
 			</div>
 
 		</section>

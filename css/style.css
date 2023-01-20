@@ -341,18 +341,61 @@ input[type='radio'].visually-hidden {
 /**** TEAM ****/
 
 .team {
+	padding-top: 50px;
+	padding-bottom: 60px;
 	background-color: #e2c4ba;
 }
+.team-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.team-list__item {
+	width: 320px;
+	margin-bottom: 20px;
+}
+.teammate__image {
+	display: block;
+	margin-bottom: 10px;
+}
+.teammate__text {
+	margin: 0;
+}
 
+.process__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
 .process__item {
+	display: flex;
+	flex-direction: column;
+	width: 23.75%;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	text-align: center;
 }
+.process__item:last-child {
+	margin-right: 0;
+}
 .process__item span {
+	display: block;
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	font-size: 30px;
 	font-weight: 500;
 	line-height: 30px;
 	color: #ffffff;
 	background-color: #8d7370;
+	border-radius: 50%;
+}
+.process__item p {
+	margin: 0;
 }
 
 /**** TEAM OFF ****/
@@ -360,16 +403,75 @@ input[type='radio'].visually-hidden {
 
 /**** REVIEWS ****/
 
+.reviews {
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+.reviews__slider {
+	position: relative;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.reviews__slide {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+}
+/* .reviews__slide {
+	display: none;
+}
+.reviews__slide:first-child {
+	display: grid;
+} */
+
+.review__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0;
+}
+.review__text p {
+	margin: 0;
+	margin-bottom: 30px;
+}
 .review__text cite {
 	font-style: normal;
 	text-transform: uppercase;
 }
+.review__image {
+	display: block;
+	margin-bottom: 24px;
+}
+.review__image:last-child {
+	margin-bottom: 0;
+}
 
-.arrow {
+.reviews__button {
+	position: absolute;
+	top: 50%;
+	width: 72px;
+	height: 72px;
+	margin-top: -36px;
 	padding: 0;
 	line-height: normal;
 	border: none;
+	border-radius: 50%;
 	background-color: #cc8b86;
+}
+.reviews__button:hover {
+	background-color: #ffffff;
+}
+.reviews__button:hover path {
+	fill: #cc8b86;
+}
+.reviews__button svg {
+	vertical-align: middle;
+}
+.reviews__button--left {
+	left: 0;
+}
+.reviews__button--right {
+	right: 0;
 }
 
 /**** REVIEWS OFF ****/
