@@ -312,29 +312,33 @@
 
 		<section class="request" id="request">
 
-			<div class="request-wrap">
+			<div class="wide-container">
 
-				<h2 class="h2 title request__title">Оставить заявку</h2>
-				<p class="request__text">
-					Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.
-				</p>
-				<form class="request__form form" action="https://echo.htmlacademy.ru" method="post">
-					<p class="form__username">
-						<input class="input-text" type="text" name="username" id="form-username" required>
-						<label class="input-label" for="form-username">Ваше имя</label>
+				<div class="request-wrap">
+
+					<h2 class="h2 title request__title">Оставить заявку</h2>
+					<p class="request__text">
+						Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.
 					</p>
-					<p class="form__phone">
-						<input class="input-text" type="tel" name="phone" id="form-phone" required>
-						<label class="input-label" for="form-phone">Введите телефон</label>
-					</p>
-					<button type="submit" class="button button__request">
-						Оставить заявку
-					</button>
-				</form>
+					<form class="request__form form" action="https://echo.htmlacademy.ru" method="post">
+						<p class="form__input form__input--username">
+							<input class="input-text" type="text" name="username" id="form-username" required>
+							<label class="input-label" for="form-username">Ваше имя</label>
+						</p>
+						<p class="form__input form__input--phone">
+							<input class="input-text" type="tel" name="phone" id="form-phone" required>
+							<label class="input-label" for="form-phone">Введите телефон</label>
+						</p>
+						<button type="submit" class="button button__request">
+							Оставить заявку
+						</button>
+					</form>
+
+				</div>
+
+				<img class="map-image" src="files/map.jpg" width="590" height="624" alt="Карта проезда к Большой Конюшенной 19">
 
 			</div>
-
-			<img class="map-image" src="files/map.jpg" width="590" height="624" alt="Карта проезда к Большой Конюшенной 19">
 
 		</section>
 
@@ -342,11 +346,15 @@
 
 	<footer class="main-footer">
 
-		<a class="company-phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
+		<div class="wide-container">
 
-		<p class="company-address">Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+			<a class="company-phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
 
-		<p class="copyright">ИП Королёва А.А.</p>
+			<p class="company-address">Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+
+			<p class="copyright">ИП Королёва А.А.</p>
+
+		</div>
 
 	</footer>
 

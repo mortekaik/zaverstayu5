@@ -30,7 +30,7 @@ html, body {
 
 body {
 	position: relative;
-	min-width: 320px;
+	min-width: 1200px;
 	font-family: 'Montserrat', 'Arial', sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -42,6 +42,12 @@ body {
 a {
 	text-decoration: none;
 	color: #533738;
+}
+a:hover {
+	color: #cc8b86;
+}
+a:focus {
+	color: #99544f;
 }
 
 ul, ol {
@@ -129,6 +135,9 @@ input[type='radio'].visually-hidden {
 	vertical-align: top;
 }
 
+.main-menu {
+	margin-right: auto;
+}
 .menu-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -146,10 +155,6 @@ input[type='radio'].visually-hidden {
 .menu-list__item a {
 	font-size: 16px;
 	line-height: 25px;
-}
-
-.company-phone {
-	margin-left: auto;
 }
 
 /**** HEADER OFF ****/
@@ -216,7 +221,6 @@ input[type='radio'].visually-hidden {
 	padding-bottom: 80px;
 	color: #ffffff;
 	background-color: #8d7370;
-	outline: 1px solid green;
 }
 
 .achievements-list {
@@ -460,6 +464,7 @@ input[type='radio'].visually-hidden {
 }
 .reviews__button:hover {
 	background-color: #ffffff;
+	cursor: pointer;
 }
 .reviews__button:hover path {
 	fill: #cc8b86;
@@ -483,19 +488,91 @@ input[type='radio'].visually-hidden {
 	background-color: #8d7370;
 	color: #ffffff;
 }
+.request .wide-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
 
+.request-wrap {
+	padding-top: 50px;
+	padding-right: 10px;
+	padding-bottom: 50px;
+	padding-left: 85px;
+}
+.request__title {
+	margin-bottom: 24px;
+	text-align: left;
+}
 .request__text {
+	margin-bottom: 34px;
 	color: rgba(255, 255, 255, 0.6);
+}
+.form__input {
+	position: relative;
+	margin: 0;
+	margin-bottom: 35px;
+}
+.input-text {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 13px;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background-color: transparent;
+	color: #ffffff;
 }
 
 .input-label {
+	position: absolute;
+	left: 0;
+	bottom: 11px;
 	color: #f6ede9;
+	transition: 0.2s ease-in;
+}
+.input-text:focus + .input-label,
+.input-text:valid:not(:placeholder-shown) + .input-label {
+	bottom: 45px;
+	transition: 0.2s ease-in;
 }
 
 .button__request {
 	padding: 25px 67px;
 	border: none;
+	color: #533738;
 	background-color: #cc8b86;
+}
+.button__request:hover {
+	color: #cc8b86;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+.map-image {
+	margin-left: auto;
+	object-fit: cover;
 }
 
 /**** REQUEST OFF ****/
+
+/**** FOOTER ****/
+
+.main-footer .wide-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-top: 37px;
+	padding-bottom: 37px;
+}
+.main-footer .company-phone {
+	margin-right: 42px;
+}
+.company-address {
+	margin: 0;
+	margin-right: auto;
+}
+.copyright {
+	margin: 0;
+}
+
+/**** FOOTER OFF ****/
